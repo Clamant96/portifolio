@@ -34,6 +34,11 @@ html, body {
 
   --box-shadow: #262626;
 
+  --border-style-search: #e8e8e8;
+
+  --background-color-gray: #f8f8f8;
+  --background-color-gray-hover: #d3d3d3;
+
 }
 
 ::-webkit-scrollbar {

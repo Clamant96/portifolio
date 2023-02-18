@@ -1,0 +1,163 @@
+header {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  position: absolute;
+
+  z-index: 1;
+
+}
+
+header .bloco-input-projeto {
+  position: relative;
+
+  width: 50%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-top: 6%;
+
+}
+
+header .bloco-input-projeto .input-selecao {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+header .bloco-input-projeto .input-selecao input {
+  width: 100%;
+  height: auto;
+
+  padding: 1%;
+
+  border: 1px solid var(--border-style-search);
+  border-radius: 5px;
+
+  outline: none;
+
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--font-montiserrat);
+
+}
+
+header .bloco-input-projeto .input-selecao .img {
+  width: 2.5%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform, 0.4s ease-in-out;
+
+}
+
+header .bloco-input-projeto .input-selecao .img svg {
+  width: 100%;
+  height: auto;
+
+}
+
+header .bloco-input-projeto .item-input-selecao {
+  border: 1px solid var(--border-style-search) !important;
+
+  border-radius: 5px !important;
+
+  font-family: var(--font-montiserrat);
+  font-weight: 500;
+
+  color: var(--text-link);
+
+  background-color: var(--background-color-gray);
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  width: 100%;
+  height: auto;
+  max-height: 40vh;
+
+  position: absolute;
+
+  margin-top: 48vh;
+
+  overflow-y: scroll;
+
+  z-index: 1;
+
+  transition: display, 0.3s ease-in-out;
+
+  display: none;
+
+  box-shadow: 0px 3px 10px -5px var(--box-shadow);
+
+}
+
+.ajuste-selecao-13 {
+  margin-top: 13vh !important;
+}
+
+.ajuste-selecao-18 {
+  margin-top: 18vh !important;
+}
+
+.ajuste-selecao-23 {
+  margin-top: 23vh !important;
+}
+
+.ajuste-selecao-28 {
+  margin-top: 28vh !important;
+}
+
+.ajuste-selecao-33 {
+  margin-top: 33vh !important;
+}
+
+.ajuste-selecao-38-5 {
+  margin-top: 38.5vh !important;
+}
+
+.ajuste-selecao-42 {
+  margin-top: 42vh !important;
+}
+
+.ajuste-selecao-47 {
+  margin-top: 47vh !important;
+}
+
+.ajuste-selecao-49 {
+  margin-top: 49vh !important;
+}
+
+header .bloco-input-projeto .item-input-selecao p {
+  width: 100%;
+  height: auto;
+
+  padding: 0.5% 1%;
+  margin: 0;
+
+  transition: background-color, 0.4s ease-in-out;
+
+}
+
+header .bloco-input-projeto .item-input-selecao p:hover {
+  background-color: var(--background-color-gray-hover);
+
+}
