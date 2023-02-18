@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+
+}
+
+html, body {
+  font-family: var(--font-montiserrat);
+
+  background-color: var(--background-color-page);
+
+  scroll-behavior: smooth;
+
+}
+
+:root {
+  --font-space-grotesk: 'Space Grotesk', sans-serif;
+  --font-montiserrat: 'Montserrat', sans-serif;
+
+  --background-color-page: #f1f1f1;
+  --background-color-balao: #2626260b;
+  --background-color-orange: #ffab0d;
+
+  --text-color-orange: #ffab0d;
+  --text-color-write: #f9f9f9;
+  --text-color-black: #010101;
+
+  --img-background-home-perfil: url(assets/img/perfil.png);
+
+  --box-shadow: #262626;
+
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--background-color-orange);
+
+}
