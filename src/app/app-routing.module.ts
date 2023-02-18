@@ -1,4 +1,5 @@
 import { HomeComponent } from './home/home.component';
+import { IframeComponent } from './iframe/iframe.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 

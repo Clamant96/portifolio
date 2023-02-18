@@ -20,6 +20,8 @@ export class HeaderComponent implements OnInit {
 
   public projetos: Projeto[] = [];
 
+  public isIframe: boolean = false;
+
   constructor() { }
 
   ngOnInit() {
@@ -29,6 +31,7 @@ export class HeaderComponent implements OnInit {
   observadorChange() {
 
     this.gerenciaDropDown(true); // ABRE O DROPDOWN
+    this.gerenciaIframe(false);
 
     let locallistaProjetos: Projeto[] = [];
     this.memoriaListaProjetos = [];
@@ -43,6 +46,7 @@ export class HeaderComponent implements OnInit {
 
     if(this.projetoSelecao == "") {
       this.gerenciaDropDown(false);
+      this.gerenciaIframe(false);
     }
 
     this.gerenciaBlocoDropDown(this.memoriaListaProjetos.length); // AJUSTA DROPDOWN
@@ -53,6 +57,7 @@ export class HeaderComponent implements OnInit {
 
     if(memoriaListaProjetos == 0) {
       this.gerenciaDropDown(false);
+      this.gerenciaIframe(false);
 
     }else if(memoriaListaProjetos == 1) {
       this.ajusteDropDown = "ajuste-selecao-13";
@@ -135,9 +140,16 @@ export class HeaderComponent implements OnInit {
 
   selecionaItemComClick(projeto: Projeto) {
     this.projetoSelecao = projeto.nome; // CARREGA A VARIAVEL DO INPUT
+
     this.projeto.id = projeto.id; // CARRE O ID SELECIONADO
+    this.projeto.img = projeto.img;
+    this.projeto.link = projeto.link;
+    this.projeto.nome = projeto.nome;
+    this.projeto.playlist = projeto.playlist;
+    this.projeto.videoInicialPlaylist = projeto.videoInicialPlaylist;
 
     this.gerenciaDropDown(false); // FECHA O DROPDOWN
+    this.gerenciaIframe(true);
 
   }
 
@@ -180,6 +192,11 @@ export class HeaderComponent implements OnInit {
         videoInicialPlaylist: "https://www.youtube.com/embed/V4WO_GcG754"
       }
     ];
+
+  }
+
+  gerenciaIframe(estado: boolean) {
+    this.isIframe = estado;
 
   }
 

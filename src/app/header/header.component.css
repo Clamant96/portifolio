@@ -161,3 +161,52 @@ header .bloco-input-projeto .item-input-selecao p:hover {
   background-color: var(--background-color-gray-hover);
 
 }
+
+nav {
+  position: absolute;
+
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 1;
+
+}
+
+nav .fechar {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  z-index: 1;
+
+}
+
+nav .fechar svg {
+  padding: 0.5%;
+  margin: 1%;
+
+  width: 2%;
+  height: auto;
+
+  background-color: var(--background-color-orange);
+
+  border-radius: 5px;
+
+  cursor: pointer;
+
+}
+
+nav .iframe {
+  position: absolute;
+
+  width: 100%;
+  height: auto;
+
+}
