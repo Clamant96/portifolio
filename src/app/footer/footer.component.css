@@ -1,0 +1,39 @@
+footer {
+  padding: 1%;
+
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--background-color-black) !important;
+
+}
+
+footer p {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--font-montiserrat);
+
+  color: var(--text-color-orange);
+
+  padding: 0 !important;
+  margin: 0 !important;
+
+}
+
+footer p strong {
+  font-weight: 600;
+
+  color: var(--text-color-orange);
+
+}
+
+footer p strong a {
+  text-decoration: none;
+
+  color: var(--text-color-orange);
+
+}

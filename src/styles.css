@@ -24,11 +24,12 @@ html, body {
 
   --background-color-page: #f1f1f1;
   --background-color-balao: #2626260b;
+  --background-color-black: #262626;
   --background-color-orange: #ffab0d;
 
   --text-color-orange: #ffab0d;
   --text-color-write: #f9f9f9;
-  --text-color-black: #010101;
+  --text-color-black: #262626;
 
   --img-background-home-perfil: url(assets/img/perfil.png);
 
