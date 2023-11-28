@@ -1,5 +1,6 @@
 import { Projeto } from './../model/Projeto';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,10 @@ export class HomeComponent implements OnInit {
   public projetos: Projeto[] = [];
   public isAtivo: boolean = false;
 
-  constructor() { }
+  constructor(
+    private router: Router,
+
+  ) { }
 
   ngOnInit() {
     window.scroll(0, 0);
